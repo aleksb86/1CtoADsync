@@ -1,0 +1,12 @@
+# Annotation
+This set of scripts, which helps to automate data synchronization process between MS Active Directory and 1C.Enterprise 8.2 (Russian ERP system). This solution is used for create new user accounts in Active Directory. Moreover there is a possibility to create (and activate) mailboxes on MS Exchange server for new users.
+
+# Short description
+ADProcessing.py contains functionality for few features:
+  - connection to Postgresql DB
+  - connection to MS Active Directory (using LDAP)
+  - querying for creation AD users accounts etc.
+
+CopyingData_to_pgsql_db.efp is specific executed file for 1C system. 
+
+usrs_activate.ps1 is MS PowerShell file, that contains functions for activation AD user accounts and assign passwords.
